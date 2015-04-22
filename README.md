@@ -1,3 +1,2 @@
 # locales
-
-# marina test
+Learning angular
