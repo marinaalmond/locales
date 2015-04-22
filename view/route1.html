@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container" data-ng-controller="ProjController">
+	<ul>
+		<li data-ng-repeat="opt in options">
+		{{ opt.name }}
+		</li>
+	</ul>
+	<br />
+	Option:<br />
+	<input type="text" data-ng-model="newOption.name" />
+	<br />
+	<button data-ng-click="addOption()">Add Option</button>
+	</div>		
+	<script src="angular.min.js"></script>
+	<script>
+		var app = angular.module('app',[]);
+		
+		app.controller('ProjController',function($scope) {
+			$scope.options= [
+				{ name: 'Languages' },
+				{ name: 'Translators' },
+				{ name: 'Settings' }
+			];
+			$scope.addOption = function() {
+				$scope.options.push(
+					{ 
+					name: $scope.newOption.name, 
+					});
+			};			
+		});		
+		
+				
+	</script>
+</body>
+</html>
+\
