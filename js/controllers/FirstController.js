@@ -1,4 +1,14 @@
 app.controller('FirstController', function($scope){
 
-	$scope.testme = 'Cao svete';
+	$scope.projects= [
+		{ name: 'Project 1' },
+		{ name: 'Project 2' },
+		{ name: 'Project 3' }
+	];
+
+	$scope.addProject=function() {
+		$scope.projects.push({ 
+			name: $scope.newProject.name
+		})
+	}		
 });

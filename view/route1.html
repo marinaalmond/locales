@@ -1,3 +1,13 @@
 <div data-ng-controller="FirstController">
-{{ testme }}
+	<ul>
+		<li data-ng-repeat="proj in projects">
+		{{ proj.name }}
+		</li>
+	</ul>
+	Project Name:
+	<br />
+	<input type="text" data-ng-model="newProject.name" />
+	<br />
+	<button data-ng-click="addProject()">Add Project</button>
+		
 </div>
