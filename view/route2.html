@@ -1,0 +1,13 @@
+<div data-ng-controller="FirstController">
+	<ul>
+		<li data-ng-repeat="item in items">
+		{{ item.name }}
+		</li>
+	</ul>
+	Option Name:
+	<br />
+	<input type="text" data-ng-model="newItem.name" />
+	<br />
+	<button data-ng-click="addItem()">Add Item</button>
+		
+</div>

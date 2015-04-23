@@ -10,5 +10,10 @@ app.controller('FirstController', function($scope){
 		$scope.projects.push({ 
 			name: $scope.newProject.name
 		})
-	}		
+	};
+	$scope.items= [
+		{ name: 'Languages' },
+		{ name: 'Translators' },
+		{ name: 'Settings' }
+	]		
 });

@@ -6,6 +6,10 @@ app.config(function($routeProvider) {
 			controller: 'FirstController',
 			templateUrl: 'view/route1.html'
 		})
+		.when('/route2', {
+			controller: 'FirstController',
+			templateUrl: 'view/route2.html'
+        })
 	    .otherwise({
 	        redirectTo: '/'
 	    });
