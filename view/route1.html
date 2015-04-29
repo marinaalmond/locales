@@ -1,12 +1,12 @@
 <div data-ng-controller="FirstController">
 	<ul>
-		<li data-ng-repeat="proj in projects">
+		<li data-ng-repeat="proj in projects" onclick="location.href='#/route2'">
 		{{ proj.name }}
 		</li>
 	</ul>
 	Project Name:
 	<br />
-	<input type="text" data-ng-model="newProject.name" />
+	<input type="text" name="projectName" data-ng-model="newProject.name" />
 	<br />
 	<button data-ng-click="addProject()">Add Project</button>
 		
