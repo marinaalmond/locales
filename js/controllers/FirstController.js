@@ -9,17 +9,19 @@ app.controller('FirstController', function($scope){
 	$scope.addProject=function() {
 		$scope.projects.push({ 
 			name: $scope.newProject.name
-		});
+		})
 	    $scope.newProject.name = ''
     };
+
 	$scope.items= [
 		{ name: 'Languages' },
 		{ name: 'Translators' },
-		{ name:'Settigs' }
+		{ name:'Settings' }
 	]	
 $scope.addItem=function() {
 		$scope.items.push({ 
 			name: $scope.newItem.name
 		})
+		$scope.newItem.name = ''
 	};
 });
