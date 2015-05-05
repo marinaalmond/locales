@@ -6,10 +6,10 @@ app.controller('FirstController', function($scope){
 		{ name: 'Project 3' }
 	];
 
-	$scope.addProject=function() {
+	$scope.addProject = function() {
 		$scope.projects.push({ 
 			name: $scope.newProject.name
-		})
+		});
 	    $scope.newProject.name = ''
     };
 
@@ -17,11 +17,11 @@ app.controller('FirstController', function($scope){
 		{ name: 'Languages' },
 		{ name: 'Translators' },
 		{ name:'Settings' }
-	]	
-$scope.addItem=function() {
+	];
+    $scope.addItem=function() {
 		$scope.items.push({ 
 			name: $scope.newItem.name
-		})
-		$scope.newItem.name = ''
+		});
+		$scope.newItem.name = '';
 	};
 });
