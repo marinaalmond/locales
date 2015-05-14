@@ -17,11 +17,20 @@ app.controller('FirstController', function($scope){
 		{ name: 'Languages' },
 		{ name: 'Translators' },
 		{ name:'Settings' }
+<<<<<<< HEAD
 	];	
 	$scope.addItem = function() {
 		$scope.items.push({ 
 			name: $scope.newItem.name
 		});
 		$scope.newItem.name = ''
+=======
+	];
+    $scope.addItem=function() {
+		$scope.items.push({ 
+			name: $scope.newItem.name
+		});
+		$scope.newItem.name = '';
+>>>>>>> 38f1074e97b8050080e29f99f6f04463631e3824
 	};
 });
