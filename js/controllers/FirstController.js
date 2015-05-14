@@ -5,7 +5,7 @@ app.controller('FirstController', function($scope){
 		{ name: 'Project 2' },
 		{ name: 'Project 3' }
 	];
-
+	
 	$scope.addProject=function() {
 		$scope.projects.push({ 
 			name: $scope.newProject.name
