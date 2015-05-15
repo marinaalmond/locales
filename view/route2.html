@@ -1,4 +1,8 @@
 <div data-ng-controller="FirstController">
+	<div class="container">
+		<div ng-include="'includes/header.html'"></div>
+	</div>
+
 	<ul>
 		<li data-ng-repeat="item in items">
 		{{ item.name }}
