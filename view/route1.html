@@ -7,11 +7,18 @@
 		<li data-ng-repeat="proj in projects" onclick="location.href='#/route2'">
 		{{ proj.name }}
 		</li>
+
 	</ul>
 	Project Name:
 	<br />
 	<input type="text" data-ng-model="newProject.name" />
 	<br />
 	<button data-ng-click="addProject()">Add Project</button>
+	<br />
+	<div ng-repeat="product in products" class="offer">
+	<p class="title">{{ product.title }}</p> 
+	<p class="price">{{ product.price | currency }}</p> 
+	<p class="date">{{ product.date | date }}</p> 
+	</div>
 		
 </div>
